@@ -1,23 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { driverListDataStart } from './Redux/Action/Action';
+import FindArray from './array/findArray';
+import MockData from './mockData'
 
 function App() {
+  // console.log(process.env.REACT_APP_API_URL);
+  // let dispatch = useDispatch()
+  // const { landingData } = useSelector((state) => state.driverPageReducer)
+  // console.log(landingData);
+  // useEffect(() => {
+  //   dispatch(driverListDataStart())
+  // }, [dispatch])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <h1>Redux-saga</h1>
+      {/* {landingData.splice(0, 5).map((card) => (
+        <p>{card.title}</p>
+      ))} */}
+      {/* <FindArray /> */}
+      < MockData />
+
     </div>
   );
 }

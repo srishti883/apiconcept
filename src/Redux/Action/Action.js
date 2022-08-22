@@ -5,10 +5,11 @@ export const driverListDataStart = ()=>({
   type:actionTypes.GET_DATA_START
 })
 
-export const driverListDataSUCCESS = (data)=>({
-    type:actionTypes.GET_DATA_SUCCESS,payload: data
+export const driverListDataSuccess = (data)=>({
+    type:actionTypes.GET_DATA_SUCCESS,
+    payload: data
   })
 
-export const driverListDataERROR = ()=>({
+export const driverListDataError = ()=>({
     type:actionTypes.GET_DATA_ERROR
   })
